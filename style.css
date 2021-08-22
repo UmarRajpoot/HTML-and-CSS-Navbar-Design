@@ -1,44 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: #11052c;
   font-family: "Montserrat", sans-serif;
 }
 
 .parentContainer {
-  background-color: black;
-  color: white;
   width: 100%;
-  height: 50px;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center;
+  position: relative;
+}
+.innerContainer {
+  width: 80%;
+  height: 600px;
+  background-color: cadetblue;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
+.navbar {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 15px;
+}
 .logo > h1 {
-  font-size: 30px;
+  font-size: 25px;
+  color: white;
+}
+.pages {
+  display: flex;
+  margin-left: 200px;
+}
+.pages > h1 {
+  font-size: 15px;
+  margin-right: 15px;
+  color: rgb(54, 54, 54);
+}
+.pages > h1:hover {
+  color: white;
+  cursor: pointer;
+}
+.logincontainer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logincontainer:hover {
+  background-color: black;
+  color: azure;
+  cursor: pointer;
+}
+.logincontainer > h1 {
+  font-size: 15px;
   padding: 10px;
 }
 
-.centerpages {
+.imageContainer {
+  height: 100%;
+  width: 500px;
+}
+
+.belowParentContainer {
   display: flex;
-  font-size: 7px;
+  height: 100%;
+}
+.sideContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+.heading {
+  width: 75%;
+  margin-bottom: 30px;
+}
+.heading > h1 {
+  font-size: 45px;
+  font-weight: bolder;
+}
+.InputParentContainer {
+  display: flex;
   align-items: center;
 }
-.centerpages > h1 {
-  margin-right: 30px;
-  color: gainsboro;
+.InputContainer {
+  background-color: aliceblue;
+  padding: 4px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.InputContainer > input {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
 }
 
-.contactpage {
-  background-color: lightskyblue;
-  padding: 5px;
-  border-radius: 15px;
+.buttonContainer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+.circleBadge {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
 }
 
-.contactpage > h1 {
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 999px;
+  margin-right: 10px;
+}
+.content {
+  width: 500px;
+}
+.content > h6 {
   font-size: 14px;
 }
